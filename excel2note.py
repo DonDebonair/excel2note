@@ -11,7 +11,7 @@ def excel_2_enex(excel_file, enex_file, name_row=0, title_column=0):
     of = open(enex_file, "wb")
     of.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     of.write('<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export.dtd">\n')
-    of.write('<en-export export-date="' + time.strftime('%Y%m%dT%H%M%SZ') + '" application="excel2enex" version="0.1">\n')
+    of.write('<en-export export-date="' + time.strftime('%Y%m%dT%H%M%SZ') + '" application="excel2enex" version="0.5">\n')
 
     wb = load_workbook(filename=excel_file)
     sheet = wb.worksheets[0]
